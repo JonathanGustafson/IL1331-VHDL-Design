@@ -1,7 +1,0 @@
-# Folders
-work/
-
-# Files
-*.mpf
-*.bak
-*.mti
