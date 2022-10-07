@@ -1,3 +1,7 @@
+# Folders
+work/
+
+# Files
 *.mpf
-*.vhd.bak
-*.cr.mti
+*.bak
+*mti
