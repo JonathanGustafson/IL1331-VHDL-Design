@@ -35,3 +35,5 @@ BEGIN
     current_value <= count;
     
 END ARCHITECTURE;
+
+--test adding a comment to check if github works properly
