@@ -4,4 +4,4 @@ work/
 # Files
 *.mpf
 *.bak
-*mti
+*.mti
