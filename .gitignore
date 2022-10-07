@@ -2,7 +2,6 @@
 work/
 
 # Files
-*.mpf
 *.bak
 *.mti
 *.wlf
