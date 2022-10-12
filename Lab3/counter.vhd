@@ -25,10 +25,10 @@ BEGIN
       
       if rising_edge(clk) then
         
-        if(load_en) then
+        if(load_en = '1') then
           count <= load_val; -- set count to the wanted load value
 
-        elseif (step /= prev_step) then
+        elsif (step /= prev_step) then
           count <= count + 1;
           prev_step <= step;
         end if;
@@ -41,4 +41,3 @@ BEGIN
     
 END ARCHITECTURE;
 
---test adding a comment to check if github works properly

@@ -26,6 +26,7 @@ end package;
 
 package body CPU_Package is
   
+  --addition function that adds one bit to the result which is used to check for overflow
   function add_overflow(a, b : std_logic_vector)
     return std_logic_vector is
 		variable y : std_logic_vector(a'length downto 0);
@@ -36,6 +37,7 @@ package body CPU_Package is
 		
   end function;
   
+  --subtraction function that adds one bit to the result which is used to check for overflow
   function sub_overflow(a, b : std_logic_vector)
   return std_logic_vector is
   variable y : std_logic_vector(a'length downto 0);

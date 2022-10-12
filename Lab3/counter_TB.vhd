@@ -12,22 +12,27 @@ ARCHITECTURE test OF counter_TB IS
     PORT(
       clk : IN std_logic;
       step : IN std_logic;
+      load_en  : in std_logic; -- active high
+			load_val : in unsigned(operation_size-1 downto 0);
       current_value : OUT unsigned(3 downto 0)
     );
 	end component;
 	
 	signal clk : std_logic := '0';
 	signal step : std_logic := '0';
+	signal load_en  : std_logic := '0';
+	signal load_val : unsigned(operation_size-1 downto 0);
 	signal current_value : unsigned(operation_size-1 downto 0) := (others => '0');
 	
 	
 BEGIN
   
-  unit : counter port map(clk, step, current_value);
+  UUT : counter port map(clk, step, load_en, load_val, current_value );
     
     clk <= not clk after 10 ns;
     
     process begin
+      wait for 100 ns;
       step <= not step;
       wait for 40 ns;
     end process;
