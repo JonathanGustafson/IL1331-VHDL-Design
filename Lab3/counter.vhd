@@ -8,6 +8,8 @@ ENTITY  counter IS
   PORT(
     clk : IN std_logic;
     step : IN std_logic;
+    load_en  : in std_logic; -- active on high
+		load_val : in unsigned(operation_size-1 downto 0);
     current_value : OUT unsigned(3 downto 0)
     );
 END ENTITY;
@@ -23,7 +25,10 @@ BEGIN
       
       if rising_edge(clk) then
         
-        if (step /= prev_step) then
+        if(load_en) then
+          count <= load_val; -- set count to the wanted load value
+
+        elseif (step /= prev_step) then
           count <= count + 1;
           prev_step <= step;
         end if;

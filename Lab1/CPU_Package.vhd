@@ -16,6 +16,7 @@ package CPU_Package is
   subtype program_word is std_logic_vector((instruction_size-1) downto 0);
   subtype command_word is std_logic_vector((operation_size-1) downto 0);
   
+  --define functions--
   function add_overflow(a, b : std_logic_vector)
 		return std_logic_vector;
 		
