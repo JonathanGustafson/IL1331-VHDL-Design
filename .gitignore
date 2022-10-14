@@ -5,3 +5,7 @@
 *.bak
 *.mti
 *.mpf
+*.dbs
+*.wlf
+*.dat
+*.psm
