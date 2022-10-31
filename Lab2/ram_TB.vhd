@@ -28,7 +28,7 @@ ARCHITECTURE test OF ram_TB IS
   unit: ram port map(adr, data, clk, ce_n, rw);
   
   clk <= not clk after 10 ns;
-  
+    
   test: process
   begin
     
