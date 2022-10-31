@@ -26,7 +26,6 @@ ENTITY controller IS
       o_flag  : IN std_logic;  -- active high 
       out_en  : OUT std_logic;  -- active high 
       data_imm  : OUT data_word;   -- signed
-      stop : IN std_logic
       );    
 END ENTITY;
 
@@ -66,7 +65,7 @@ BEGIN
 
 PC : counter port map(clk, PC_step, PC_current_value, PC_load_en, PC_load_val); --Program counter
 
-process(clk,reset,stop)
+process(clk,reset)
 variable current_state : fsm_state;
 
 begin
@@ -74,7 +73,7 @@ begin
       if (reset = '1') then
             next_state <= controller_reset;
 
-      elsif(rising_edge(clk) and stop /= '1') then
+      elsif(rising_edge(clk)) then
       case current_state is
 
             when controller_reset =>
@@ -105,7 +104,7 @@ begin
                   PC_load_en <= '0'; --enable program counter 
 
                   adr <= adress_bus(PC_current_value);
-                  rw_m <= '1'; --disable (read on high)
+                  --rw_m <= '1'; --disable (read on high)
                   RWM_en <='1'; --disable
                   ROM_en <='0'; --enable
                   rw_reg <= '1'; -- disable
@@ -205,7 +204,7 @@ begin
             when store_data =>
 
                   adr <= instr_mem;
-                  rw_m <= '1'; --set to write
+                  rw_m <= '0'; --set to write
                   RWM_en <= '0'; --enable
                   ROM_en <= '1'; --disable
                   rw_reg <= '1'; --don't write
