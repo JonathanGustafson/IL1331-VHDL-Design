@@ -14,7 +14,7 @@ ENTITY RegisterFile IS
     sel_in  : IN std_logic_vector (1 downto 0);   
     sel_out_1   : IN std_logic_vector (1 downto 0);   
     sel_out_0   : IN std_logic_vector (1 downto 0);  
-    rw_reg  : in std_logic
+    rw_reg  : in std_logic --write = 0 
     
     ); 
   
@@ -26,7 +26,7 @@ ARCHITECTURE RTL OF RegisterFile IS
   signal registers: data_words;
 
   BEGIN
-    process(clk, rw_reg, sel_out_1, sel_out_0)
+    process(clk)
       begin
         if rising_edge(clk) then
           if rw_reg = '0' then

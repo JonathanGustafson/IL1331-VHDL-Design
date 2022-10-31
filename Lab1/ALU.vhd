@@ -18,7 +18,7 @@ END ALU;
 
 Architecture RTL of ALU is 
 
-  constant ZERO : std_logic_vector(data_size downto 0) := (others => '0');
+  constant ZERO : std_logic_vector(data_size-1 downto 0) := (others => '0');
   
   begin process(Op, A, B, En, clk)
     
@@ -60,7 +60,7 @@ Architecture RTL of ALU is
       n_flag <= tmp(tmp'left-1);
       
       --check if output is 0
-      if tmp = ZERO then z_flag <= '1'; else z_flag <= '0'; end if;
+      if tmp(tmp'left-1 downto 0) = ZERO then z_flag <= '1'; else z_flag <= '0'; end if;
         
       --Check for overflow during add or sub operations
       if (Op = "000" or Op = "001") then o_flag <= tmp(tmp'left) xor tmp(tmp'left-1) xor a(a'left) xor b(b'left); end if;
