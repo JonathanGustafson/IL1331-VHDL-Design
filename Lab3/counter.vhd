@@ -31,35 +31,32 @@ BEGIN
         elsif (step /= prev_step) then
           count <= count + 1;
           prev_step <= step;
+                  
+        -- convert count to 7seg combinations for its output.
+        case count is
+            when "0000" => seven_seg_value <= "00111111"; -- 0
+				    when "0001" => seven_seg_value <= "00000110"; -- 1
+				    when "0010" => seven_seg_value <= "01011011"; -- 2
+				    when "0011" => seven_seg_value <= "01001111"; -- 3
+				    when "0100" => seven_seg_value <= "01100110"; -- 4
+				    when "0101" => seven_seg_value <= "01101101"; -- 5
+				    when "0110" => seven_seg_value <= "01111101"; -- 6
+				    when "0111" => seven_seg_value <= "00000111"; -- 7
+				    when "1000" => seven_seg_value <= "01111111"; -- 8
+				    when "1001" => seven_seg_value <= "01101111"; -- 9
+				    when "1010" => seven_seg_value <= "01110111"; -- A
+				    when "1011" => seven_seg_value <= "01111100"; -- B
+				    when "1100" => seven_seg_value <= "00111001"; -- C
+				    when "1101" => seven_seg_value <= "01011110"; -- D
+				    when "1110" => seven_seg_value <= "01111001"; -- E
+				    when "1111" => seven_seg_value <= "01110001"; -- F
+				    when others => seven_seg_value <= "00000000"; -- Nothing
+        end case ;
         end if;
+
         
       end if;
       
-  end process;
-
-  process(count)
-  begin
-    -- convert count to 7seg combinations.
-    case count is
-        when "0000" => seven_seg_value <= "00111111"; -- 0
-				when "0001" => seven_seg_value <= "00000110"; -- 1
-				when "0010" => seven_seg_value <= "01011011"; -- 2
-				when "0011" => seven_seg_value <= "01001111"; -- 3
-				when "0100" => seven_seg_value <= "01100110"; -- 4
-				when "0101" => seven_seg_value <= "01101101"; -- 5
-				when "0110" => seven_seg_value <= "01111101"; -- 6
-				when "0111" => seven_seg_value <= "00000111"; -- 7
-				when "1000" => seven_seg_value <= "01111111"; -- 8
-				when "1001" => seven_seg_value <= "01101111"; -- 9
-				when "1010" => seven_seg_value <= "01110111"; -- A
-				when "1011" => seven_seg_value <= "01111100"; -- B
-				when "1100" => seven_seg_value <= "00111001"; -- C
-				when "1101" => seven_seg_value <= "01011110"; -- D
-				when "1110" => seven_seg_value <= "01111001"; -- E
-				when "1111" => seven_seg_value <= "01110001"; -- F
-				when others => seven_seg_value <= "00000000"; -- Nothing
-    
-    end case ;
   end process;
 
   current_value <= count;

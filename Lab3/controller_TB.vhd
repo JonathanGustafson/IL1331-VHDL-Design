@@ -30,8 +30,7 @@ architecture test of controller_TB is
         n_flag  : IN std_logic;   -- active high   
         o_flag  : IN std_logic;  -- active high 
         out_en  : OUT std_logic;  -- active high 
-        data_imm  : OUT data_word;   -- signed
-        stop : IN std_logic
+        data_imm  : OUT data_word   -- signed
       );
     end component;
 
@@ -70,7 +69,7 @@ architecture test of controller_TB is
         signal s_o_flag   : std_logic;
         signal s_out_en   : std_logic;
         signal s_data_imm : data_word;
-        signal s_stop     : std_logic := '0';
+        
 begin
 
     ROM_unit : ROM port map(
@@ -98,11 +97,10 @@ begin
         n_flag   => s_n_flag,
         o_flag   => s_o_flag,
         out_en   => s_out_en,
-        data_imm => s_data_imm,
-        stop     => s_stop
+        data_imm => s_data_imm
     );
 
-    s_clk <= NOT s_clk after 20 ns; -- 50 MHz
+    s_clk <= not s_clk after 20 ns; -- 50 MHz
 
     process
 	begin 

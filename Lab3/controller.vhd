@@ -25,7 +25,7 @@ ENTITY controller IS
       n_flag  : IN std_logic;   -- active high   
       o_flag  : IN std_logic;  -- active high 
       out_en  : OUT std_logic;  -- active high 
-      data_imm  : OUT data_word;   -- signed
+      data_imm  : OUT data_word   -- signed
       );    
 END ENTITY;
 
@@ -63,7 +63,7 @@ signal PC_current_value : unsigned(operation_size-1 downto 0);
 
 BEGIN
 
-PC : counter port map(clk, PC_step, PC_current_value, PC_load_en, PC_load_val); --Program counter
+PC : counter port map(clk, PC_load_en, PC_load_val, PC_step, PC_current_value); --Program counter
 
 process(clk,reset)
 variable current_state : fsm_state;
@@ -74,6 +74,8 @@ begin
             next_state <= controller_reset;
 
       elsif(rising_edge(clk)) then
+      
+      current_state := next_state;
       case current_state is
 
             when controller_reset =>
@@ -83,17 +85,17 @@ begin
 			PC_load_val <= (others => '0');
 
                   --reset the other values to initial state
-			rw_m <= '0';
+			rw_m <= '1';
 			RWM_en <= '1';          
 			ROM_en <= '1';                   
 			rw_reg <= '0';                
-			sel_op_1 <= (others => '0');
+			alu_en <= '0';
+			out_en <= '0';
+                  sel_op_1 <= (others => '0');
 			sel_op_0 <= (others => '0');
 			sel_in <= (others => '0');
 			sel_mux <= (others => '0');
 			alu_op <= (others => '0');
-			alu_en <= '0';
-			out_en <= '0';
 			data_imm <= (others => '0');
 
                   --select next_state
@@ -123,7 +125,7 @@ begin
 
             when decode_instruction =>
 
-                  if (instr_alu_en = '0') then 
+                  if (instr_alu_en = '0') then --operation need ALU
 
                         RWM_en <= '1'; --diasble
                         ROM_en <= '1'; --disable
@@ -148,8 +150,8 @@ begin
 
                               when "100" => --Branch if Zero-flag (BRZ)
                                     if(z_flag = '1') then
-                                          PC_load_val <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
                                           PC_load_en <= '1';
+                                          PC_load_val <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
                                     end if;
                                     next_state <= branch;
 
@@ -214,7 +216,7 @@ begin
 
                   next_state <= fetch_instruction;
 
-            when load_immediate =>
+            when load_immediate =>  
 
                   RWM_en <= '1'; --disable
                   ROM_en <= '1'; --disable
@@ -231,7 +233,8 @@ begin
             when branch =>
                   next_state <= fetch_instruction;
 
-            when others => NULL;
+            when NOP => 
+                  next_state <= fetch_instruction;
 
       end case;
       end if;
