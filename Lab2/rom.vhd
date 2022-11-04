@@ -13,6 +13,8 @@ END ENTITY rom;
 
 ARCHITECTURE RTL OF rom IS 
 
+  type rom_array is array(0 to 2**adress_size
+
 BEGIN
   process(ce_n, adr)
     begin

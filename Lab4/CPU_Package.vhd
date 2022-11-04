@@ -4,7 +4,7 @@ use IEEE.std_logic_signed.all;
 
 package CPU_Package is
   
-  constant adress_size : integer := 8;
+  constant adress_size : integer := 4;
   constant data_size : integer := 4;
   constant operation_size : integer := 4;
   constant instruction_size : integer := 10;
@@ -16,7 +16,6 @@ package CPU_Package is
   subtype program_word is std_logic_vector((instruction_size-1) downto 0);
   subtype command_word is std_logic_vector((operation_size-1) downto 0);
   
-  --define functions--
   function add_overflow(a, b : std_logic_vector)
 		return std_logic_vector;
 		
@@ -27,6 +26,7 @@ end package;
 
 package body CPU_Package is
   
+  --addition function that adds one bit to the result which is used to check for overflow
   function add_overflow(a, b : std_logic_vector)
     return std_logic_vector is
 		variable y : std_logic_vector(a'length downto 0);
@@ -37,6 +37,7 @@ package body CPU_Package is
 		
   end function;
   
+  --subtraction function that adds one bit to the result which is used to check for overflow
   function sub_overflow(a, b : std_logic_vector)
   return std_logic_vector is
   variable y : std_logic_vector(a'length downto 0);
