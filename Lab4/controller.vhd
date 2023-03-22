@@ -92,7 +92,7 @@ begin
 			rw_reg <= '0';                
 			alu_en <= '0';
 			out_en <= '0';
-      sel_op_1 <= (others => '0');
+                  sel_op_1 <= (others => '0');
 			sel_op_0 <= (others => '0');
 			sel_in <= (others => '0');
 			sel_mux <= (others => '0');

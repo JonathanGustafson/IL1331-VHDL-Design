@@ -3,28 +3,28 @@ K3
 13
 cModel Technology
 dC:\altera\13.0sp1\modelsim_ase\win32aloem\Lab2
-Ecounter
-Z0 w1665140272
+Econtroller
+Z0 w1667296789
 Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z2 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
 Z3 DPx4 work 11 cpu_package 0 22 Rame742QEi==6?6gUzc`>0
 Z4 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z7 dC:\altera\13.0sp1\modelsim_ase\win32aloem\Lab3
-Z8 8C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd
-Z9 FC:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd
+Z7 d/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3
+Z8 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd
+Z9 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd
 l0
 L7
-VS>01H8Kmo4IffPEIZbGeL2
+VTId]=:HbU[fjcHz>DKO1b3
 Z10 OV;C;10.1d;51
 32
-Z11 !s108 1665140273.696000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd|
-Z13 !s107 C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd|
+Z11 !s108 1669364902.571267
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd|
+Z13 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd|
 Z14 o-work work -2002 -explicit -O0
 Z15 tExplicit 1
-!s100 B@G3cKQ1T6WWKRA0fGga81
+!s100 zJ3PC>ozRBhPQmW63>7>g2
 !i10b 1
 Artl
 R1
@@ -33,10 +33,10 @@ R3
 R4
 R5
 R6
-DEx4 work 7 counter 0 22 S>01H8Kmo4IffPEIZbGeL2
-l20
-L15
-VGmnlz8cV8MZdOJzFdF9M:3
+DEx4 work 10 controller 0 22 TId]=:HbU[fjcHz>DKO1b3
+l64
+L32
+V]dod4_Od_0<a=Y0iC5LU50
 R10
 32
 R11
@@ -44,10 +44,10 @@ R12
 R13
 R14
 R15
-!s100 ;Z^a6lV7<cV4SOEbKDXYe1
+!s100 [KGEUdI=GA2[O^38k]Uj83
 !i10b 1
-Ecounter_tb
-Z16 w1665143202
+Econtroller_tb
+Z16 w1667380128
 R1
 R2
 R3
@@ -55,20 +55,20 @@ R4
 R5
 R6
 R7
-Z17 8C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter_TB.vhd
-Z18 FC:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter_TB.vhd
+Z17 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller_TB.vhd
+Z18 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller_TB.vhd
 l0
 L7
-Vc6H_Tbl<R3MZgcg8ZdBKF1
-!s100 C:5MM@Y^7kMiQIM;h]LRm3
+V3<<ZM5;]84R7?6JBiDJ=>0
 R10
 32
-!i10b 1
-Z19 !s108 1665143204.427000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter_TB.vhd|
-Z21 !s107 C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter_TB.vhd|
+Z19 !s108 1669364902.609106
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller_TB.vhd|
+Z21 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller_TB.vhd|
 R14
 R15
+!s100 emA]]?k<T@BWhZS8JnBIc0
+!i10b 1
 Atest
 R1
 R2
@@ -76,37 +76,117 @@ R3
 R4
 R5
 R6
-Z22 DEx4 work 10 counter_tb 0 22 c6H_Tbl<R3MZgcg8ZdBKF1
-l24
+DEx4 work 13 controller_tb 0 22 3<<ZM5;]84R7?6JBiDJ=>0
+l73
 L10
-Z23 Vj>]H9^^k0SZjf7LRieNkE2
-Z24 !s100 58nAJca@;4bLOaSiBcinc1
+VD[nG7Y1dJ14bRBJzOL@Ph2
 R10
 32
-!i10b 1
 R19
 R20
 R21
 R14
 R15
+!s100 XV==>CfX@kfciRQaZ`mLE2
+!i10b 1
+Ecounter
+Z22 w1667324523
+R4
+R5
+R6
+R7
+Z23 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd
+Z24 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd
+l0
+L6
+VXc?BQV=A=BDF<V@kzM<IP1
+R10
+32
+Z25 !s108 1669364902.641634
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd|
+Z27 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd|
+R14
+R15
+!s100 =L;_4=]AEDnhi^ah6:MG51
+!i10b 1
+Artl
+R4
+R5
+R6
+DEx4 work 7 counter 0 22 Xc?BQV=A=BDF<V@kzM<IP1
+l22
+L17
+V8MaM25HIBoX3f9o1@`;F23
+R10
+32
+R25
+R26
+R27
+R14
+R15
+!s100 kMbLbQd1D8O]_YN1BfZo91
+!i10b 1
+Ecounter_tb
+Z28 w1667324237
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+Z29 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter_TB.vhd
+Z30 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter_TB.vhd
+l0
+L7
+Vc6H_Tbl<R3MZgcg8ZdBKF1
+R10
+32
+Z31 !s108 1669364902.669349
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter_TB.vhd|
+Z33 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter_TB.vhd|
+R14
+R15
+!s100 C:5MM@Y^7kMiQIM;h]LRm3
+!i10b 1
+Atest
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 counter_tb 0 22 c6H_Tbl<R3MZgcg8ZdBKF1
+l30
+L10
+VoUKIczLNN9Da_YE0=bmGS1
+R10
+32
+R31
+R32
+R33
+R14
+R15
+!s100 SVMd]bbMbQlJ9@<T^3Q6f1
+!i10b 1
 Pcpu_package
 R1
 R2
 R5
 R6
-Z25 w1664451488
+Z34 w1665735796
 R7
-Z26 8C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/CPU_Package.vhd
-Z27 FC:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/CPU_Package.vhd
+Z35 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd
+Z36 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd
 l0
 L5
 VRame742QEi==6?6gUzc`>0
 R10
 32
 b1
-Z28 !s108 1665138880.647000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/CPU_Package.vhd|
-Z30 !s107 C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/CPU_Package.vhd|
+Z37 !s108 1669364902.700720
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd|
+Z39 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd|
 R14
 R15
 !s100 PnjQCGel1jWc`;E@2aaEI2
@@ -120,13 +200,54 @@ R6
 l0
 L27
 VoEhEZ=R3R<G5j6UEAT<W60
+!s100 XV2@H>CFaP[[7Zbi=e>Mj2
 R10
 32
-R28
-R29
-R30
+R37
+R38
+R39
 R14
 R15
 nbody
-!s100 VJm1S39XO_[8[7XY4L5G11
 !i10b 1
+Erom
+Z40 w1669364904
+R1
+R2
+R3
+R5
+R6
+R7
+Z41 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd
+Z42 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd
+l0
+L5
+VkB??k9_NM4?OjeDi4z[ZV1
+!s100 e1D3jSR>_1@mOZX8HY<VE3
+R10
+32
+!i10b 1
+Z43 !s108 1669364904.161470
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd|
+Z45 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd|
+R14
+R15
+Artl
+R1
+R2
+R3
+R5
+R6
+Z46 DEx4 work 3 rom 0 22 kB??k9_NM4?OjeDi4z[ZV1
+l18
+L14
+VI@0Y[GfMO]cdFjSlL`aDQ0
+!s100 Tc<SzzLk<BI:6<QPU0>PH1
+R10
+32
+!i10b 1
+R43
+R44
+R45
+R14
+R15

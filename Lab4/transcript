@@ -1,0 +1,73 @@
+# Loading project Laboration4
+# reading /home/jonathan/altera/13.1/modelsim_ase/linux/../modelsim.ini
+# Loading project Laboration3
+vsim work.controller_tb(test)
+# vsim work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_data_imm \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en
+run
+quit -sim
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_data_imm \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en
+run
+quit -sim

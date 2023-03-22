@@ -1,4 +1,4 @@
-C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter_TB.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter_TB.vhd
+/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter_TB.vhd {1 {vcom -work work -2002 -explicit /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter_TB.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -10,7 +10,30 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity counter_TB
 -- Compiling architecture test of counter_TB
 
-} {} {}} C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/CPU_Package.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/CPU_Package.vhd
+} {} {}} /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller_TB.vhd {1 {vcom -work work -2002 -explicit /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller_TB.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package CPU_Package
+-- Compiling entity controller_TB
+-- Compiling architecture test of controller_TB
+
+} {} {}} /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd {1 {vcom -work work -2002 -explicit /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package CPU_Package
+-- Compiling entity rom
+-- Compiling architecture RTL of rom
+
+} {} {}} /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd {1 {vcom -work work -2002 -explicit /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -21,7 +44,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling package body CPU_Package
 -- Loading package CPU_Package
 
-} {} {}} C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd
+} {} {}} /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd {1 {vcom -work work -2002 -explicit /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -30,6 +53,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_SIGNED
 -- Loading package CPU_Package
+-- Compiling entity controller
+-- Compiling architecture RTL of controller
+
+} {} {}} /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd {1 {vcom -work work -2002 -explicit /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Compiling entity counter
 -- Compiling architecture RTL of counter
 

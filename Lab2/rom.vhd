@@ -13,7 +13,7 @@ END ENTITY rom;
 
 ARCHITECTURE RTL OF rom IS 
 
-  type rom_array is array(0 to 2**adress_size
+  type rom_array is array(0 to 2**adress_size) of std_logic_vector(adress_size downto 0);
 
 BEGIN
   process(ce_n, adr)

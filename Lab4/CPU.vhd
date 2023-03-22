@@ -6,15 +6,16 @@ use work.CPU_Package.all;
 
 ENTITY CPU is  
     PORT(  
-        adr     : OUT adress_bus; 
-        instr   : IN instruction_bus;  
-        IO_data    : INOUT data_bus;  
-        rw      : OUT std_logic;  -- read on high, write on low   
-        ROM_en  : OUT std_logic;  -- active low  
-        RWM_en  : OUT std_logic;  -- active low    
-        IO_en   : OUT std_logic; 
-        clk     : IN std_logic;  
-        reset   : IN std_logic    -- active high  
+        o_adr     : OUT adress_bus; 
+        i_instr   : IN instruction_bus;  
+        io_data    : INOUT data_bus;  
+        o_rw      : OUT std_logic;  -- read on high, write on low   
+        o_ROM_en  : OUT std_logic;  -- active low  
+        o_RWM_en  : OUT std_logic;  -- active low    
+        o_IO_en   : OUT std_logic; 
+        i_clk     : IN std_logic;  
+        i_reset   : IN std_logic;    -- active high  
+		i_stop 	  : IN std_logic
         );        
 END ENTITY CPU;  
 
@@ -111,6 +112,7 @@ architecture Structure of CPU is
 	-- Register File output
 	signal s_DATA_OUT_0, s_DATA_OUT_1 : data_word;
 	
+	
 	--other signals
 	signal s_clk : std_logic;
 
@@ -133,18 +135,18 @@ begin
 		port map(
 			out_en   => s_OUT_EN,
 			data_in  => s_DATA_OUT_1,
-			data_out => IO_data
+			data_out => io_data
 		);
 	
 	controller_unit : Controller 
 		port map(
-			adr      => s_addr,
-			data     => s_data,
-			rw_RWM   => s_rw_RWM,
-			RWM_en   => s_RWM_en,
-			ROM_en   => s_ROM_en,
-			clk      => s_clk,
-			reset    => s_reset,
+			adr      => o_adr,
+			data     => io_data,
+			rw_m   => o_rw,
+			RWM_en   => o_RWM_en,
+			ROM_en   => o_ROM_en,
+			clk      => i_clk,
+			reset    => i_reset,
 			rw_reg   => s_RW_REG,
 			sel_op_1 => s_SEL_OP_1,
 			sel_op_0 => s_SEL_OP_0,
@@ -157,7 +159,7 @@ begin
 			o_flag   => s_O_FLAG,
 			out_en   => s_OUT_EN,
 			data_imm => s_DATA_IMM,
-			stopp     => s_stop
+			stopp     => i_stop
 		);
 	
 	multiplexer_unit : multiplexer 

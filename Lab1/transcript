@@ -1,0 +1,800 @@
+# Loading project Laboration1.2
+# reading /home/jonathan/altera/13.1/modelsim_ase/linux/../modelsim.ini
+# Loading project Lab3v3
+# reading /home/jonathan/altera/13.1/modelsim_ase/linux/../modelsim.ini
+# Loading project Laboration3
+# Error opening /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd
+# Path name '/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd' doesn't exist.
+# Error opening /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd
+# Path name '/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/C:/altera/13.0sp1/modelsim_ase/win32aloem/Lab3/counter.vhd' doesn't exist.
+# Compile of controller.vhd was successful.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of counter.vhd failed with 2 errors.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# 5 compiles, 2 failed with 3 errors. 
+# Compile of controller.vhd was successful.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of counter.vhd failed with 2 errors.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# 5 compiles, 2 failed with 3 errors. 
+# Compile of counter.vhd failed with 2 errors.
+# Compile of counter.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+vsim work.counter_tb(test)
+# vsim work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+# ** Fatal: (vsim-3348) Port length (8) does not match actual length (4) for port '/counter_tb/UUT/current_value'.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_tb/UUT File: /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd Line: 13
+# FATAL ERROR while loading design
+# Error loading design
+# Compile of counter_TB.vhd failed with 1 errors.
+# Compile of counter_TB.vhd was successful.
+vsim work.counter_tb(test)
+# vsim work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value
+run
+# WARNING: No extended dataflow license exists
+quit -sim
+# Compile of controller.vhd failed with 1 errors.
+# Compile of controller.vhd failed with 1 errors.
+# Compile of controller.vhd failed with 1 errors.
+# Compile of counter.vhd failed with 1 errors.
+# Compile of counter.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of counter.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of controller.vhd was successful.
+# Error: syntax error in expression "1,0": extra tokens at end of expression
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of controller.vhd was successful.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of rom.vhd was successful.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/w_adr \
+sim:/controller_tb/w_data \
+sim:/controller_tb/w_rw_m \
+sim:/controller_tb/w_RWM_en \
+sim:/controller_tb/w_ROM_en \
+sim:/controller_tb/r_clk \
+sim:/controller_tb/r_reset \
+sim:/controller_tb/w_RW_reg \
+sim:/controller_tb/w_sel_op_1 \
+sim:/controller_tb/w_sel_op_0 \
+sim:/controller_tb/w_sel_in \
+sim:/controller_tb/w_sel_mux \
+sim:/controller_tb/w_alu_op \
+sim:/controller_tb/w_alu_en \
+sim:/controller_tb/w_z_flag \
+sim:/controller_tb/w_n_flag \
+sim:/controller_tb/w_o_flag \
+sim:/controller_tb/w_out_en \
+sim:/controller_tb/w_data_imm \
+sim:/controller_tb/r_stop
+run
+quit -sim
+# Compile of controller_TB.vhd was successful.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of controller_TB.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm \
+sim:/controller_tb/s_stop
+run
+quit -sim
+# Compile of controller.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm \
+sim:/controller_tb/s_stop
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of controller.vhd failed with 1 errors.
+# Compile of controller_TB.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# Compile of rom.vhd was successful.
+# 6 compiles, 2 failed with 2 errors. 
+# Compile of controller.vhd was successful.
+# Compile of controller_TB.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+run
+quit -sim
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+run
+quit -sim
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+quit -sim
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave -position insertpoint  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+run
+quit -sim
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+# ** Fatal: (vsim-3348) Port length (4) does not match actual length (8) for port '/counter_tb/UUT/current_value'.
+#    Time: 0 ns  Iteration: 0  Instance: /counter_tb/UUT File: /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# Compile of controller.vhd was successful.
+# Compile of controller_TB.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# Compile of rom.vhd was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value \
+sim:/counter_tb/seven_seg_value
+run
+quit -sim
+# Compile of counter_TB.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+quit -sim
+# Compile of counter_TB.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value \
+sim:/counter_tb/seven_seg_value
+run
+quit -sim
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+run
+quit -sim
+# Compile of controller.vhd was successful.
+# Compile of controller_TB.vhd was successful.
+# Compile of counter.vhd failed with 1 errors.
+# Compile of counter_TB.vhd was successful.
+# Compile of CPU_Package.vhd was successful.
+# Compile of rom.vhd was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of counter_TB.vhd was successful.
+# Compile of counter_TB.vhd was successful.
+# Compile of counter.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+run
+run -continue
+run -continue
+run -continue
+add wave  \
+sim:/controller_tb/s_adr \
+sim:/controller_tb/s_data \
+sim:/controller_tb/s_rw_m \
+sim:/controller_tb/s_RWM_en \
+sim:/controller_tb/s_ROM_en \
+sim:/controller_tb/s_clk \
+sim:/controller_tb/s_reset \
+sim:/controller_tb/s_RW_reg \
+sim:/controller_tb/s_sel_op_1 \
+sim:/controller_tb/s_sel_op_0 \
+sim:/controller_tb/s_sel_in \
+sim:/controller_tb/s_sel_mux \
+sim:/controller_tb/s_alu_op \
+sim:/controller_tb/s_alu_en \
+sim:/controller_tb/s_z_flag \
+sim:/controller_tb/s_n_flag \
+sim:/controller_tb/s_o_flag \
+sim:/controller_tb/s_out_en \
+sim:/controller_tb/s_data_imm
+quit -sim
+# Compile of counter.vhd was successful.
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value \
+sim:/counter_tb/seven_seg_value
+run
+# Compile of counter.vhd was successful.
+quit -sim
+# Compile of counter.vhd was successful.
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value \
+sim:/counter_tb/seven_seg_value
+run
+quit -sim
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+quit -sim
+# Compile of counter_TB.vhd was successful.
+vsim -t ns work.controller_tb(test)
+# vsim -t ns work.controller_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.controller_tb(test)
+# Loading work.rom(rtl)
+# Loading work.controller(rtl)
+# Loading work.counter(rtl)
+quit -sim
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value \
+sim:/counter_tb/seven_seg_value
+run
+quit -sim
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+quit -sim
+# Compile of counter.vhd was successful.
+vsim -t ns work.counter_tb(test)
+# vsim -t ns work.counter_tb(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu_package(body)
+# Loading work.counter_tb(test)
+# Loading work.counter(rtl)
+add wave  \
+sim:/counter_tb/clk \
+sim:/counter_tb/step \
+sim:/counter_tb/load_en \
+sim:/counter_tb/load_val \
+sim:/counter_tb/current_value \
+sim:/counter_tb/seven_seg_value
+run
+quit -sim
