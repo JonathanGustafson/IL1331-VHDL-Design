@@ -17,7 +17,7 @@ END ENTITY ram;
 
 ARCHITECTURE RTL OF ram IS 
 
-  type data_buses is array(15 downto 0) of std_logic_vector(3 downto 0 );
+  type data_buses is array(15 downto 0) of data_bus;
   signal mem : data_buses;
 
 BEGIN

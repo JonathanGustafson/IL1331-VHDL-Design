@@ -35,9 +35,9 @@ component counter is
       port(
             clk      : in std_logic;
             load_en  : in std_logic; -- active on high
-            load_val : in unsigned(operation_size-1 downto 0);
+            load_val : in unsigned(adress_size-1 downto 0);
             step     : in std_logic;
-            current_value : out unsigned(3 downto 0)
+            current_value : out unsigned(adress_size-1 downto 0)
       );
 end component;
 
@@ -58,8 +58,8 @@ alias instr_d3d2d1d0 : std_logic_vector(3 downto 0) is instruction(3 downto 0);
 --Program counter
 signal PC_step : std_logic := '0'; 
 signal PC_load_en : std_logic;
-signal PC_load_val : unsigned(operation_size-1 downto 0);
-signal PC_current_value : unsigned(operation_size-1 downto 0);
+signal PC_load_val : unsigned(adress_size-1 downto 0);
+signal PC_current_value : unsigned(adress_size-1 downto 0);
 
 BEGIN
 
@@ -91,7 +91,7 @@ begin
 			rw_reg <= '0';                
 			alu_en <= '0';
 			out_en <= '0';
-                  sel_op_1 <= (others => '0');
+      sel_op_1 <= (others => '0');
 			sel_op_0 <= (others => '0');
 			sel_in <= (others => '0');
 			sel_mux <= (others => '0');
@@ -110,8 +110,8 @@ begin
                   RWM_en <='1'; --disable
                   ROM_en <='0'; --enable
                   rw_reg <= '1'; -- disable
-			alu_en <= '0'; -- disable     
-			out_en <= '0'; -- disable  
+			            alu_en <= '0'; -- disable     
+			            out_en <= '0'; -- disable  
                   
                   next_state <= load_instruction;
 
@@ -129,7 +129,7 @@ begin
 
                         RWM_en <= '1'; --diasble
                         ROM_en <= '1'; --disable
-                        rw_reg <= '1'; --enable
+                        rw_reg <= '1'; --read
                         sel_op_1   <= to_unsigned(to_integer(unsigned(instr_r1)),instr_r1'length);
                         sel_op_0   <= to_unsigned(to_integer(unsigned(instr_r2)),instr_r2'length);
                         sel_in     <= to_unsigned(to_integer(unsigned(instr_r3)),instr_r3'length);
@@ -151,26 +151,26 @@ begin
                               when "100" => --Branch if Zero-flag (BRZ)
                                     if(z_flag = '1') then
                                           PC_load_en <= '1';
-                                          PC_load_val <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
+                                          PC_load_val(3 downto 0) <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
                                     end if;
                                     next_state <= branch;
 
                               when "101" => --Branch if N-flag (BRN)
                                     if(n_flag = '1') then
-                                          PC_load_val <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
+                                          PC_load_val(3 downto 0) <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
                                           PC_load_en <= '1';
                                     end if;
                                     next_state <= branch;
 
                               when "110" => --Branch if Overflow-Flag (BRO)
                                     if(o_flag = '1') then
-                                          PC_load_val <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
+                                          PC_load_val(3 downto 0) <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
                                           PC_load_en <= '1';
                                     end if;
                                     next_state <= branch;
 
                               when "111" => --Branch (BRA)
-                                    PC_load_val <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
+                                    PC_load_val(3 downto 0) <= to_unsigned(to_integer(unsigned(instr_mem)), instr_mem'length);
                                     PC_load_en <= '1';
                                     next_state <= branch;
 
@@ -191,7 +191,7 @@ begin
 
             when load_data =>
                   
-                  adr <= instr_mem;
+                  adr(3 downto 0) <= instr_mem;
                   rw_m <= '1'; --set to read
                   RWM_en <= '0'; --enable
                   ROM_en <= '1'; --disable
@@ -205,7 +205,7 @@ begin
 
             when store_data =>
 
-                  adr <= instr_mem;
+                  adr(3 downto 0) <= instr_mem;
                   rw_m <= '0'; --set to write
                   RWM_en <= '0'; --enable
                   ROM_en <= '1'; --disable
@@ -226,7 +226,7 @@ begin
 
                   alu_en <= '0'; --disable
                   out_en <= '0'; --disable
-                  data_imm <= instr_d3d2d1d0;
+                  data_imm(3 downto 0) <= instr_d3d2d1d0;
 
                   next_state <= fetch_instruction;
 

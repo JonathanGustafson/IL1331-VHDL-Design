@@ -5,7 +5,7 @@ use IEEE.std_logic_signed.all;
 package CPU_Package is
   
   constant adress_size : integer := 8;
-  constant data_size : integer := 4;
+  constant data_size : integer := 8;
   constant operation_size : integer := 4;
   constant instruction_size : integer := 10;
   

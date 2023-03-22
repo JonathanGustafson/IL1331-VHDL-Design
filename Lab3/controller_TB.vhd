@@ -100,14 +100,14 @@ begin
         data_imm => s_data_imm
     );
 
-    s_clk <= not s_clk after 20 ns; -- 50 MHz
+    s_clk <= not s_clk after 10 ns; -- 50 MHz
 
     process
 	begin 
 
-        wait for 300 ns;
+        wait for 100 ns;
         s_reset <= '0';
-		wait for 999 ms;
+		    wait for 100 ms;
 	end process;
     
 

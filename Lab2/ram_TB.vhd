@@ -10,7 +10,7 @@ ARCHITECTURE test OF ram_TB IS
   component ram
      PORT( 
         adr : IN adress_bus; 
-        data : INOUT data_bus:= (others => 'Z'); 
+        data : INOUT data_bus := (others => 'Z'); 
         clk : IN std_logic := '0'; 
         ce_n : IN std_logic;   -- active low 
         rw : IN std_logic      -- r=1, w=0
@@ -33,30 +33,30 @@ ARCHITECTURE test OF ram_TB IS
   begin
     
     ce_n <= '0'; rw <= '0'; --write
-    data <= "0001";
-    adr <= "1010";
+    data <= "00000001";
+    adr <= "00001010";
     wait for 20 ns;
     
     ce_n <= '1'; -- clear databus
     wait for 20 ns;
     
     ce_n <= '0'; rw <= '0'; --write
-    data <= "1111";
-    adr <= "1110";
+    data <= "00001111";
+    adr <= "00001110";
     wait for 20 ns;
     
     ce_n <= '1'; -- clear databus
     wait for 20 ns;
     
     ce_n <= '0'; rw <= '1'; -- read
-    adr <= "1010";
+    adr <= "00001010";
     wait for 20 ns;
     
     ce_n <= '1'; -- clear databus
     wait for 20 ns;
     
     ce_n <= '0'; rw <= '1'; -- read
-    adr <= "1110";
+    adr <= "00001110";
     wait for 20 ns;
     
   end process;

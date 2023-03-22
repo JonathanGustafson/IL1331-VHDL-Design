@@ -19,10 +19,10 @@ ARCHITECTURE test OF multiplexer_TB IS
   end component;
   
   signal sel : std_logic_vector(1 downto 0) := "00";
-  signal data_in_3 : data_word := "0011";
-  signal data_in_2 : data_word := "0010";
-  signal data_in_1 : data_bus  := "0001";
-  signal data_in_0 : data_word := "0000";
+  signal data_in_3 : data_word := "00000011";
+  signal data_in_2 : data_word := "00000010";
+  signal data_in_1 : data_bus  := "00000001";
+  signal data_in_0 : data_word := "00000000";
   signal data_out : data_word;
   
   BEGIN

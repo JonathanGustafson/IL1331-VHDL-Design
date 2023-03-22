@@ -2,21 +2,22 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.all;
+use work.CPU_Package.all;
 
 ENTITY  counter IS
   PORT(
     clk : IN std_logic;
     step : IN std_logic;
     load_en  : IN std_logic; -- active on high
-		load_val : IN unsigned(3 downto 0);
-    current_value : OUT unsigned(3 downto 0);
+		load_val : IN unsigned(adress_size-1 downto 0);
+    current_value : OUT unsigned(adress_size-1 downto 0);
     seven_seg_value : OUT unsigned(7 downto 0)
     );
 END ENTITY;
 
 ARCHITECTURE RTL OF counter IS
   
-  signal count : unsigned(3 downto 0) := (others => '0');
+  signal count : unsigned(adress_size-1 downto 0) := (others => '0');
 	signal prev_step : std_logic := '0';
 	
 BEGIN
@@ -29,11 +30,12 @@ BEGIN
           count <= load_val; -- set count to the wanted load value
 
         elsif (step /= prev_step) then
+          
           count <= count + 1;
           prev_step <= step;
                   
         -- convert count to 7seg combinations for its output.
-        case count is
+        case count(3 downto 0) is
             when "0000" => seven_seg_value <= "00111111"; -- 0
 				    when "0001" => seven_seg_value <= "00000110"; -- 1
 				    when "0010" => seven_seg_value <= "01011011"; -- 2

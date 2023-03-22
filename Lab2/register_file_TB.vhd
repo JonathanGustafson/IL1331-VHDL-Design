@@ -40,19 +40,19 @@ ARCHITECTURE test OF register_file_TB IS
   begin
   --simulate writing
   sel_in <= "00";
-  data_in <= "0001";
+  data_in <= "00000001";
   rw_reg <= '0';
   wait for 10 ns;  
   sel_in <= "01";
-  data_in <= "0011";
+  data_in <= "00000011";
   rw_reg <= '0';
   wait for 10 ns;  
   sel_in <= "10";
-  data_in <= "0111";
+  data_in <= "00000111";
   rw_reg <= '0';
   wait for 10 ns;  
   sel_in <= "11";
-  data_in <= "1111";
+  data_in <= "00001111";
   rw_reg <= '0';
   wait for 10 ns;  
 
