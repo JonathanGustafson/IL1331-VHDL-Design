@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.cpu_package.all;
 
-ENTITY DataBuffer IS  
+ENTITY data_buffer IS  
   
  port ( 
   out_en  : IN std_logic;   
@@ -11,9 +11,9 @@ ENTITY DataBuffer IS
   data_out : OUT data_bus
  );  
  
-END ENTITY DataBuffer;  
+END ENTITY data_buffer;  
   
-ARCHITECTURE RTL OF DataBuffer IS  
+ARCHITECTURE RTL OF data_buffer IS  
 
   BEGIN
     

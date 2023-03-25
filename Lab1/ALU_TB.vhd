@@ -1,5 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all; 
 use work.CPU_package.all;
 
 entity ALU_TB is
@@ -9,7 +11,7 @@ Architecture test of ALU_TB is
   
   component ALU
     PORT(  
-      Op : IN std_logic_vector(2 downto 0); 
+      Op : IN unsigned(2 downto 0); 
       A : IN data_word;  
       B : IN data_word; 
       En : IN std_logic; 
@@ -21,7 +23,7 @@ Architecture test of ALU_TB is
    );
   end component;
  
-  signal s_Op : std_logic_vector(2 downto 0):= (others => '0');   --default to all zeros
+  signal s_Op : unsigned(2 downto 0):= (others => '0');   --default to all zeros
 	signal s_A : data_word := (others => '0');                      --default to all zeros
 	signal s_B : data_word := (others => '0');                      --default to all zeros
 	signal s_En : std_logic := '1';

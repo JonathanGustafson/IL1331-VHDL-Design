@@ -1,11 +1,12 @@
 library IEEE;
 use ieee.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 use work.cpu_package.all;
 
 ENTITY Multiplexer IS  
     PORT(  
-      sel   : IN std_logic_vector(1 downto 0);  
+      sel   : IN unsigned(1 downto 0);  
       data_in_3 : IN data_word; --added by jonthe because if seemed wierd not to include this one.
       data_in_2 : IN data_word;  
       data_in_1 : IN data_bus; -- Potential type problem...  

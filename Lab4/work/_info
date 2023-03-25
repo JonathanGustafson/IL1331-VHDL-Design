@@ -4,26 +4,28 @@ K3
 cModel Technology
 d/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab3
 Ealu
-Z0 w1667219371
-Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z2 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
-Z3 DPx4 work 11 cpu_package 0 22 Rame742QEi==6?6gUzc`>0
-Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 d/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4
-Z7 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ALU.vhd
-Z8 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ALU.vhd
+Z0 w1679581590
+Z1 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z2 DPx4 work 11 cpu_package 0 22 0S5jd`mco=Ok0]mm1K_bZ0
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\jonth\Documents\GitHub\IL1331-VHDL-Design\Lab4
+Z9 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU.vhd
+Z10 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU.vhd
 l0
-L5
-V7L>KG^bPo^kJMzPzhY;EX2
-Z9 OV;C;10.1d;51
+L7
+VbCaiCbTg:?`VmHS@Ho;ED0
+Z11 OV;C;10.1d;51
 32
-Z10 !s108 1669367786.341000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ALU.vhd|
-Z12 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ALU.vhd|
-Z13 o-work work -2002 -explicit -O0
-Z14 tExplicit 1
-!s100 N8kDNhM6^[b2FJV_B@h7I3
+Z12 !s108 1679602042.242000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU.vhd|
+Z14 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU.vhd|
+Z15 o-work work -2002 -explicit -O0
+Z16 tExplicit 1
+!s100 WY0O6@^WoU4K4:B<Yk53i2
 !i10b 1
 Artl
 R1
@@ -31,455 +33,837 @@ R2
 R3
 R4
 R5
-DEx4 work 3 alu 0 22 7L>KG^bPo^kJMzPzhY;EX2
-l23
-L19
+R6
+R7
+DEx4 work 3 alu 0 22 bCaiCbTg:?`VmHS@Ho;ED0
+l25
+L21
 VO0ghIa[Hbh4TnK6dMFd6B1
-R9
-32
-R10
 R11
+32
 R12
 R13
 R14
-!s100 9DQNNi2SecK4LG@N51f9Y1
-!i10b 1
-Eclock_divider
-Z15 w1667481543
-R1
-Z16 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-R4
-R5
-R6
-Z17 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd
-Z18 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd
-l0
-L5
-VnB]07b;32`daOU@e6m^@N3
-R9
-32
-Z19 !s108 1669367786.367220
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd|
-Z21 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd|
-R13
-R14
-!s100 FGGd0_mkG:bzE;i^JZX<^1
-!i10b 1
-Abehaviour
-R1
+R15
 R16
-R4
-R5
-DEx4 work 13 clock_divider 0 22 nB]07b;32`daOU@e6m^@N3
-l18
-L13
-VH?DOkQ7f<9XANkMG>6ki11
-R9
-32
-R19
-R20
-R21
-R13
-R14
-!s100 4z37W_oSJY6=2>UZhzBU<2
+!s100 @7IBg[6_D0V0CEgfdBO]83
 !i10b 1
-Econtroller
-Z22 w1669367086
+Ealu_tb
+Z17 w1679586911
 R1
 R2
 R3
-Z23 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R4
 R5
 R6
-Z24 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/controller.vhd
-Z25 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/controller.vhd
+R7
+R8
+Z18 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU_TB.vhd
+Z19 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU_TB.vhd
 l0
 L7
-Vi6SAT46Co6?Xl`ikP_3?b1
-R9
+Vl76f1H:C2KGdZVcIjFW@G2
+R11
 32
-Z26 !s108 1669367785.982412
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/controller.vhd|
-Z28 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/controller.vhd|
-R13
-R14
-!s100 8KM_<@NDOMY<^TJ4dBhbE0
+Z20 !s108 1679586913.949000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU_TB.vhd|
+Z22 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab1/ALU_TB.vhd|
+R15
+R16
+!s100 B81RVAbO>OXQ]l0g?PH>a2
 !i10b 1
-Artl
+Atest
 R1
 R2
 R3
-R23
 R4
 R5
-DEx4 work 10 controller 0 22 i6SAT46Co6?Xl`ikP_3?b1
-l65
-L33
-V]dod4_Od_0<a=Y0iC5LU50
-R9
+R6
+R7
+DEx4 work 6 alu_tb 0 22 l76f1H:C2KGdZVcIjFW@G2
+l36
+L10
+Vm6cN^V=DLQEd4NHDcWLLB3
+R11
 32
+R20
+R21
+R22
+R15
+R16
+!s100 g20CVc8jIoYmWBeeQe8W=1
+!i10b 1
+Eclock_divider
+Z23 w1679669248
+R4
+R5
+R6
+R7
+R8
+Z24 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd
+Z25 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd
+l0
+L5
+V_fO<n?WJAhGELV3dba8LL2
+!s100 N;]<cboVchN4jGPj1C[eB1
+R11
+32
+!i10b 1
+Z26 !s108 1679669265.628000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd|
+Z28 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider.vhd|
+R15
+R16
+Abehaviour
+R4
+R5
+R6
+R7
+Z29 DEx4 work 13 clock_divider 0 22 _fO<n?WJAhGELV3dba8LL2
+l19
+L13
+Z30 V84FCg;:Gc^9:CB;aaOb4O3
+Z31 !s100 C9RZR_]10lSO4=zHXC<?R3
+R11
+32
+!i10b 1
 R26
 R27
 R28
-R13
-R14
-!s100 CE_fFX^LWo`Z<EI43Vf5e2
-!i10b 1
-Ecounter
-Z29 w1667324523
-R23
+R15
+R16
+Eclock_divider_tb
+Z32 w1679568840
 R4
-R5
-R6
-Z30 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/counter.vhd
-Z31 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/counter.vhd
-l0
-L6
-VXc?BQV=A=BDF<V@kzM<IP1
-R9
-32
-Z32 !s108 1669367786.017369
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/counter.vhd|
-Z34 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/counter.vhd|
-R13
-R14
-!s100 =L;_4=]AEDnhi^ah6:MG51
-!i10b 1
-Artl
-R23
-R4
-R5
-DEx4 work 7 counter 0 22 Xc?BQV=A=BDF<V@kzM<IP1
-l22
-L17
-V8MaM25HIBoX3f9o1@`;F23
-R9
-32
-R32
-R33
-R34
-R13
-R14
-!s100 kMbLbQd1D8O]_YN1BfZo91
-!i10b 1
-Ecpu
-w1669369513
 R1
 R2
 R3
-R23
-R4
-R5
 R6
-8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd
-F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd
+R7
+R8
+Z33 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider_TB.vhd
+Z34 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider_TB.vhd
 l0
 L7
-V8_6g]>`PnjN:>BDB[;lR[2
-!s100 NH]R_IT=fO_OlMATiVRD[2
-R9
+VfQmCORhUlMUCm[TY2<oIc1
+R11
 32
+Z35 !s108 1679602042.583000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider_TB.vhd|
+Z37 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/clock_divider_TB.vhd|
+R15
+R16
+!s100 DHZBEc5VX_mci0=7SHTI60
 !i10b 1
-!s108 1669369517.041096
-!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd|
-!s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd|
-R13
-R14
-Pcpu_package
+Atestbench
+R4
 R1
 R2
+R3
+R6
+R7
+DEx4 work 16 clock_divider_tb 0 22 fQmCORhUlMUCm[TY2<oIc1
+l24
+L10
+V4FCT`QK8`_Z5mcFI`hJ^X0
+R11
+32
+R35
+R36
+R37
+R15
+R16
+!s100 NVQFNP=_U<RW35LL3Dl]Q3
+!i10b 1
+Econtroller
+Z38 w1679601207
+R4
+R1
+R2
+R3
+R6
+R7
+R8
+Z39 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd
+Z40 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd
+l0
+L9
+VTId]=:HbU[fjcHz>DKO1b3
+R11
+32
+Z41 !s108 1679602041.326000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd|
+Z43 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/controller.vhd|
+R15
+R16
+!s100 58?8OSW<mo^Lnnn;n1zQ@0
+!i10b 1
+Artl
+R4
+R1
+R2
+R3
+R6
+R7
+DEx4 work 10 controller 0 22 TId]=:HbU[fjcHz>DKO1b3
+l66
+L34
+VL:TjD:RL;_2YiA5d^cL_l0
+R11
+32
+R41
+R42
+R43
+R15
+R16
+!s100 H[a:JRKGdG_7k02106[921
+!i10b 1
+Ecounter
+Z44 w1679495120
+R4
+R1
+R2
+R3
+R6
+R7
+R8
+Z45 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd
+Z46 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd
+l0
+L7
+V;VYD3HEI@Nn77ONI7JE`71
+R11
+32
+Z47 !s108 1679602041.443000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd|
+Z49 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/counter.vhd|
+R15
+R16
+!s100 T2d@M@cRSo0OUZf_UAdVV0
+!i10b 1
+Artl
+R4
+R1
+R2
+R3
+R6
+R7
+DEx4 work 7 counter 0 22 ;VYD3HEI@Nn77ONI7JE`71
+l23
+L18
+V^Hl9SHk>aJim@7=GhIO=T2
+R11
+32
+R47
+R48
+R49
+R15
+R16
+!s100 _OCFB[>dZ3cZU`Zd>;FNn1
+!i10b 1
+Ecpu
+Z50 w1679599631
+R1
+R2
+R3
 R4
 R5
-Z35 w1667482435
 R6
-Z36 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU_Package.vhd
-Z37 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU_Package.vhd
+R7
+R8
+Z51 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd
+Z52 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd
+l0
+L7
+Vb33g7^NFj>]c3_43_Lmmk3
+R11
+32
+Z53 !s108 1679602042.468000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd|
+Z55 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU.vhd|
+R15
+R16
+!s100 ^R58OIb:V42AgOAFkG]LG1
+!i10b 1
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 cpu 0 22 b33g7^NFj>]c3_43_Lmmk3
+l119
+L22
+V04f=WbUnE[j?Cf>ZhNaEz2
+R11
+32
+R53
+R54
+R55
+R15
+R16
+!s100 [DWH_3DjCCWfo[9XM2;od0
+!i10b 1
+Pcpu_package
+R4
+R1
+R6
+R7
+Z56 w1679497748
+R8
+Z57 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd
+Z58 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd
 l0
 L5
-VRame742QEi==6?6gUzc`>0
-R9
+V0S5jd`mco=Ok0]mm1K_bZ0
+R11
 32
 b1
-Z38 !s108 1669367786.085281
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU_Package.vhd|
-Z40 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/CPU_Package.vhd|
-R13
-R14
-!s100 PnjQCGel1jWc`;E@2aaEI2
+Z59 !s108 1679602041.556000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd|
+Z61 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab3/CPU_Package.vhd|
+R15
+R16
+!s100 Z00_cRR4ZOd`>^e:n:1O61
 !i10b 1
 Bbody
-R3
-R1
 R2
 R4
-R5
+R1
+R6
+R7
 l0
 L27
 VoEhEZ=R3R<G5j6UEAT<W60
-R9
+R11
 32
-R38
-R39
-R40
-R13
-R14
+R59
+R60
+R61
+R15
+R16
 nbody
 !s100 XV2@H>CFaP[[7Zbi=e>Mj2
 !i10b 1
-Edatabuffer
-Z41 w1665145013
+Edata_buffer
+Z62 w1679577627
+R4
 R1
 R2
 R3
-R23
-R4
-R5
 R6
-Z42 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/data_buffer.vhd
-Z43 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/data_buffer.vhd
+R7
+R8
+Z63 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/data_buffer.vhd
+Z64 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/data_buffer.vhd
+l0
+L6
+V@LCJSfg;go]jfI^UQ^ezG1
+R11
+32
+Z65 !s108 1679602041.666000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/data_buffer.vhd|
+Z67 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/data_buffer.vhd|
+R15
+R16
+!s100 VQaan8]H[fXSWba7SCm9M1
+!i10b 1
+Artl
+R4
+R1
+R2
+R3
+R6
+R7
+DEx4 work 11 data_buffer 0 22 @LCJSfg;go]jfI^UQ^ezG1
+l18
+L16
+VlFMfnYa^B?jfjOPifELn[0
+R11
+32
+R65
+R66
+R67
+R15
+R16
+!s100 coHSEGfKCFN?XHDK8F8Yi1
+!i10b 1
+Edatabuffer
+Z68 w1664804360
+R4
+R1
+R2
+R3
+R6
+R7
+R8
+R63
+R64
 l0
 L6
 V1B^z=hKS6lM9JNH@1VR<J1
-R9
+R11
 32
-Z44 !s108 1669367786.118038
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/data_buffer.vhd|
-Z46 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/data_buffer.vhd|
-R13
-R14
+Z69 !s108 1679577198.801000
+R66
+R67
+R15
+R16
 !s100 iI2>A`lQo2H5bR?<T<eL62
 !i10b 1
 Artl
+R4
 R1
 R2
 R3
-R23
-R4
-R5
+R6
+R7
 DEx4 work 10 databuffer 0 22 1B^z=hKS6lM9JNH@1VR<J1
 l18
 L16
 VN?^[lmfGVE7dbzP@j[Cm:0
-R9
+R11
 32
-R44
-R45
-R46
-R13
-R14
+R69
+R66
+R67
+R15
+R16
 !s100 KRThATh[h>Yd7<Y:QQTU>3
 !i10b 1
-Emultiplexer
-R41
-R1
-R2
-R3
-R23
-R4
-R5
-R6
-Z47 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/multiplexer.vhd
-Z48 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/multiplexer.vhd
-l0
-L6
-V7LBRaKimmaCDgWR5mIP3;1
-R9
-32
-Z49 !s108 1669367786.149412
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/multiplexer.vhd|
-Z51 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/multiplexer.vhd|
-R13
-R14
-!s100 7lB8VN=?D<zcQ9GGlkU=O3
-!i10b 1
-Artl
-R1
-R2
-R3
-R23
-R4
-R5
-DEx4 work 11 multiplexer 0 22 7LBRaKimmaCDgWR5mIP3;1
-l20
-L18
-VSoJ3hD=@09Y7XeTM=`d4@1
-R9
-32
-R49
-R50
-R51
-R13
-R14
-!s100 [ka9]ng`oZ@Z8A1aog8QC3
-!i10b 1
-Eram
-Z52 w1665759840
-R1
-R2
-R3
-R23
-R4
-R5
-R6
-Z53 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ram.vhd
-Z54 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ram.vhd
-l0
-L6
-VR0N5Tcj9l@Nf3151LO39]0
-R9
-32
-Z55 !s108 1669367786.182111
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ram.vhd|
-Z57 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/ram.vhd|
-R13
-R14
-!s100 0DKAW6HlUm87@6S<VMCjV3
-!i10b 1
-Artl
-R1
-R2
-R3
-R23
-R4
-R5
-DEx4 work 3 ram 0 22 R0N5Tcj9l@Nf3151LO39]0
-l23
-L18
-V9IYngW]XH=^3]edEm0lHd3
-R9
-32
-R55
-R56
-R57
-R13
-R14
-!s100 AEUb<e@>NobEdc5oRVLAj0
-!i10b 1
-Eregisterfile
-Z58 w1667219371
-R1
-R2
-R3
-R23
-R4
-R5
-R6
-Z59 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/register_file.vhd
-Z60 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/register_file.vhd
-l0
-L6
-VN24LPT8nVHDX`eGZOidj13
-R9
-32
-Z61 !s108 1669367786.219462
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/register_file.vhd|
-Z63 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/register_file.vhd|
-R13
-R14
-!s100 7<Gm2LzJ6>Ak_<]Il4>Wg1
-!i10b 1
-Artl
-R1
-R2
-R3
-R23
-R4
-R5
-DEx4 work 12 registerfile 0 22 N24LPT8nVHDX`eGZOidj13
-l28
-L23
-V???hL4Jf3aK]d_FRRlA@63
-R9
-32
-R61
-R62
-R63
-R13
-R14
-!s100 ZD]dWU=iKgF4TzCGoN>j@1
-!i10b 1
-Erom
-Z64 w1669367088
-R2
-R3
-R1
-R4
-R5
-R6
-Z65 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom.vhd
-Z66 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom.vhd
-l0
-L7
-VM^V7_m=LbQBzOAKdW4GDA0
-R9
-32
-Z67 !s108 1669367786.250988
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom.vhd|
-Z69 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom.vhd|
-R13
-R14
-!s100 OHR9MdCobZR>13HU<n1W50
-!i10b 1
-Artl
-R2
-R3
-R1
-R4
-R5
-DEx4 work 3 rom 0 22 M^V7_m=LbQBzOAKdW4GDA0
-l39
-L16
-VS@KE3WFY3g:Wc>LzNJ<952
-R9
-32
-R67
-R68
-R69
-R13
-R14
-!s100 oe[OlL8RfjA9n0n5o?O@h0
-!i10b 1
-Erom_tb
-Z70 w1667389042
-R23
+Eenchip
+Z70 w1679574898
 R1
 R2
 R3
 R4
 R5
 R6
-Z71 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd
-Z72 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd
+R7
+R8
+Z71 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip.vhd
+Z72 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip.vhd
 l0
-L6
-V3iV32cBofBZoEBgI@2]V;1
-R9
+L8
+VH<F:X@3[3>h[E1FPhO[Ca2
+R11
 32
-Z73 !s108 1669367786.309528
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd|
-Z75 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd|
-R13
-R14
-!s100 kdI`_]lBL8DTWH1nE?1N_0
+Z73 !s108 1679602042.698000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip.vhd|
+Z75 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip.vhd|
+R15
+R16
+!s100 zm29@OlU]j9z>ndGW@YZ81
 !i10b 1
-Atest
-R23
+Astructure
 R1
 R2
 R3
 R4
 R5
-DEx4 work 6 rom_tb 0 22 3iV32cBofBZoEBgI@2]V;1
-l23
-L9
-V63fIgBj`Y]>Ah2?NTZahf0
-R9
+R6
+R7
+DEx4 work 6 enchip 0 22 H<F:X@3[3>h[E1FPhO[Ca2
+l82
+L20
+V7hU<Yz>R:8fo6c8@ZX98o2
+R11
 32
 R73
 R74
 R75
-R13
-R14
+R15
+R16
+!s100 bg3k2`iZ=Vl2QA4f>R@]b0
+!i10b 1
+Eenchip_tb
+Z76 w1679586341
+R4
+R1
+R2
+R3
+R6
+R7
+R8
+Z77 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip_TB.vhd
+Z78 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip_TB.vhd
+l0
+L7
+VO?LLN^45eO4S8CYCh^0oP2
+R11
+32
+Z79 !s108 1679602042.923000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip_TB.vhd|
+Z81 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/enchip_TB.vhd|
+R15
+R16
+!s100 FhV2_[E5ROocE?WV0MR0?3
+!i10b 1
+Atestbench
+R4
+R1
+R2
+R3
+R6
+R7
+DEx4 work 9 enchip_tb 0 22 O?LLN^45eO4S8CYCh^0oP2
+l31
+L10
+V6`m<RC`SQ0^dCzJj>Gl9^2
+!s100 I`2SbdkW]bM?;1XFh3R_h3
+R11
+32
+R79
+R80
+R81
+R15
+R16
+!i10b 1
+Emultiplexer
+Z82 w1679584248
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z83 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/multiplexer.vhd
+Z84 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/multiplexer.vhd
+l0
+L7
+VG`oTN]cNcWmK>KW_HdMPI3
+R11
+32
+Z85 !s108 1679602041.778000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/multiplexer.vhd|
+Z87 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/multiplexer.vhd|
+R15
+R16
+!s100 zbD9:EY]KNoJ9aEa6?8CA3
+!i10b 1
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 11 multiplexer 0 22 G`oTN]cNcWmK>KW_HdMPI3
+l21
+L19
+VSoJ3hD=@09Y7XeTM=`d4@1
+R11
+32
+R85
+R86
+R87
+R15
+R16
+!s100 _]mlNfI5L727m=RTAH?@73
+!i10b 1
+Eout_buffer
+Z88 w1679570747
+R1
+R2
+R4
+R5
+R3
+R6
+R7
+R8
+Z89 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/out_buffer.vhd
+Z90 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/out_buffer.vhd
+l0
+L8
+V9F;AE]>Po93f?TAS8=CgW3
+R11
+32
+Z91 !s108 1679602042.811000
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/out_buffer.vhd|
+Z93 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab4/out_buffer.vhd|
+R15
+R16
+!s100 HJXl8:mI[_Go@1TK:Yi_K3
+!i10b 1
+Abehave
+R1
+R2
+R4
+R5
+R3
+R6
+R7
+DEx4 work 10 out_buffer 0 22 9F;AE]>Po93f?TAS8=CgW3
+l17
+L16
+Vj2NTSkNi;@[D3GZUTXhBQ0
+R11
+32
+R91
+R92
+R93
+R15
+R16
+!s100 MEcdJBjGMMBH_JJo1A_Zl0
+!i10b 1
+Eram
+Z94 w1679493473
+R4
+R1
+R2
+R3
+R6
+R7
+R8
+Z95 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/ram.vhd
+Z96 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/ram.vhd
+l0
+L6
+VR0N5Tcj9l@Nf3151LO39]0
+R11
+32
+Z97 !s108 1679602041.900000
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/ram.vhd|
+Z99 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/ram.vhd|
+R15
+R16
+!s100 0DKAW6HlUm87@6S<VMCjV3
+!i10b 1
+Artl
+R4
+R1
+R2
+R3
+R6
+R7
+DEx4 work 3 ram 0 22 R0N5Tcj9l@Nf3151LO39]0
+l23
+L18
+VkCLb?cMZ?9znDgkO2<a7W0
+R11
+32
+R97
+R98
+R99
+R15
+R16
+!s100 :4>AbRmR4C]9ZZEV;HV;m3
+!i10b 1
+Eregister_file
+Z100 w1679598296
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z101 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file.vhd
+Z102 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file.vhd
+l0
+L7
+VS_@VzUMkGGzAYb^VJ<fL?1
+R11
+32
+Z103 !s108 1679602042.010000
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file.vhd|
+Z105 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file.vhd|
+R15
+R16
+!s100 K7bPd3YeY_Tf[L_7`@elU0
+!i10b 1
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 register_file 0 22 S_@VzUMkGGzAYb^VJ<fL?1
+l29
+L24
+VC5eK7Fgc_GIn>meFO0BSI0
+R11
+32
+R103
+R104
+R105
+R15
+R16
+!s100 KD[hIB@;]F87C3M[?[d1B1
+!i10b 1
+Eregister_file_tb
+Z106 w1679493567
+R4
+R1
+R2
+R6
+R7
+R8
+Z107 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file_TB.vhd
+Z108 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file_TB.vhd
+l0
+L5
+V3bIm@GC6BkloNZEiz0Qkh0
+R11
+32
+Z109 !s108 1679593245.693000
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file_TB.vhd|
+Z111 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/register_file_TB.vhd|
+R15
+R16
+!s100 05f=g9JiNl81jim_`BCA22
+!i10b 1
+Atest
+R4
+R1
+R2
+R6
+R7
+DEx4 work 16 register_file_tb 0 22 3bIm@GC6BkloNZEiz0Qkh0
+l32
+L8
+VXoPVI6n>b[9B4McVF;oE@2
+R11
+32
+R109
+R110
+R111
+R15
+R16
+!s100 =I2F>E^1OcT8=PnRPP3Xn3
+!i10b 1
+Eregisterfile
+Z112 w1679490912
+R4
+R1
+R2
+R3
+R6
+R7
+R8
+R101
+R102
+l0
+L6
+VN24LPT8nVHDX`eGZOidj13
+R11
+32
+Z113 !s108 1679587163.200000
+R104
+R105
+R15
+R16
+!s100 7<Gm2LzJ6>Ak_<]Il4>Wg1
+!i10b 1
+Artl
+R4
+R1
+R2
+R3
+R6
+R7
+DEx4 work 12 registerfile 0 22 N24LPT8nVHDX`eGZOidj13
+l28
+L23
+V???hL4Jf3aK]d_FRRlA@63
+R11
+32
+R113
+R104
+R105
+R15
+R16
+!s100 ZD]dWU=iKgF4TzCGoN>j@1
+!i10b 1
+Erom
+Z114 w1679601999
+R4
+R1
+R2
+R6
+R7
+R8
+Z115 8C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd
+Z116 FC:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd
+l0
+L5
+VkB??k9_NM4?OjeDi4z[ZV1
+R11
+32
+Z117 !s108 1679602042.132000
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd|
+Z119 !s107 C:/Users/jonth/Documents/GitHub/IL1331-VHDL-Design/Lab2/rom.vhd|
+R15
+R16
+!s100 e1D3jSR>_1@mOZX8HY<VE3
+!i10b 1
+Artl
+R4
+R1
+R2
+R6
+R7
+DEx4 work 3 rom 0 22 kB??k9_NM4?OjeDi4z[ZV1
+l18
+L14
+VGcznzVVBoM9[HGSdo90530
+R11
+32
+R117
+R118
+R119
+R15
+R16
+!s100 @2e3Q_nlGP4bk=Hb]cES^1
+!i10b 1
+Erom_tb
+Z120 w1667389042
+R3
+R4
+R1
+Z121 DPx4 work 11 cpu_package 0 22 Rame742QEi==6?6gUzc`>0
+R6
+R7
+Z122 d/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4
+Z123 8/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd
+Z124 F/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd
+l0
+L6
+V3iV32cBofBZoEBgI@2]V;1
+R11
+32
+Z125 !s108 1669367786.309528
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd|
+Z127 !s107 /home/jonathan/Documents/GitHub/IL1331-VHDL-Design/Lab4/rom_TB.vhd|
+R15
+R16
+!s100 kdI`_]lBL8DTWH1nE?1N_0
+!i10b 1
+Atest
+R3
+R4
+R1
+R121
+R6
+R7
+DEx4 work 6 rom_tb 0 22 3iV32cBofBZoEBgI@2]V;1
+l23
+L9
+V63fIgBj`Y]>Ah2?NTZahf0
+R11
+32
+R125
+R126
+R127
+R15
+R16
 !s100 B5XT5Z9mmUI`ANFDingf_2
 !i10b 1
