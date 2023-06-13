@@ -22,18 +22,17 @@ ARCHITECTURE RTL OF counter IS
 	
 BEGIN
   process(clk)
-    begin
-      
+    begin  
       if rising_edge(clk) then
         
         if(load_en = '1') then
           count <= load_val; -- set count to the wanted load value
 
         elsif (step /= prev_step) then
-          
           count <= count + 1;
           prev_step <= step;
-                  
+        end if;
+        
         -- convert count to 7seg combinations for its output.
         case count(3 downto 0) is
             when "0000" => seven_seg_value <= "00111111"; -- 0
@@ -53,15 +52,13 @@ BEGIN
 				    when "1110" => seven_seg_value <= "01111001"; -- E
 				    when "1111" => seven_seg_value <= "01110001"; -- F
 				    when others => seven_seg_value <= "00000000"; -- Nothing
-        end case ;
-        end if;
-
-        
+        end case ;       
       end if;
-      
+      current_value <= count;
   end process;
+  
 
-  current_value <= count;
+  
     
 END ARCHITECTURE;
 

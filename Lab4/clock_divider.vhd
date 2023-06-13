@@ -1,4 +1,4 @@
-library ieee;
+  library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
@@ -21,11 +21,11 @@ begin
     process(in_clk)
       begin
         if (rising_edge(in_clk)) then
-            if (count < 0) then        --set to 49999999 for 1hz, is 0 atm for ease of simulation
+            if (count < 0) then        --set to 49999999 for 1hz, set to 0 for ease of simulation
                 count <= count + 1;
             else
                 count <= (others => '0');
-                s_clk_1hz <= not s_clk_1hz;
+                s_clk_1hz <= not(s_clk_1hz);
             end if;
         end if;
       

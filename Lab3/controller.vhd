@@ -89,13 +89,13 @@ begin
 
                   --reset the other values to initial state
 			           rw_m <= '0';       -- read on high, write on low
-		                  RWM_en <= '1';          
+		             RWM_en <= '1';          
 			           ROM_en <= '1';                 
 			           rw_reg <= '0'; --write              
 			           alu_en <= '0';
 			           out_en <= '0';
-                             IO_en <= '1'; 
-                              sel_op_1   <= (others => '0');
+                 IO_en <= '1'; 
+                 sel_op_1   <= (others => '0');
 			           sel_op_0   <= (others => '0');
 			           sel_in     <= (others => '0');
 			           sel_mux    <= (others => '0');
@@ -114,8 +114,8 @@ begin
                   RWM_en <= '1'; --disable
                   ROM_en <= '0'; --enable
                   rw_reg <= '1'; -- read
-			alu_en <= '0'; -- disable     
-			out_en <= '0'; -- disable  
+			            alu_en <= '0'; -- disable     
+			            out_en <= '0'; -- disable  
                   IO_en  <= '0';
                   
                   next_state <= load_instruction;
